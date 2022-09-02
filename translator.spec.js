@@ -1,14 +1,14 @@
-import { translateToMorse } from "./translator";
+import { translateToMorse } from "./translator.js";
 
 describe("Testing translateToMorse to take in letters", () => {
-  it("a will translate to *-", () => {
+  it("a will translate to .-", () => {
     //arrange
     let string;
     //act
     string = "a";
     let result = translateToMorse(string);
     //assert
-    expect(result).toBe("*-");
+    expect(result).toBe(".-");
   });
 });
 
@@ -18,9 +18,9 @@ describe("Testing that the strings take any case.", () => {
     let string;
     //act
     string = "Keep";
-    let result = translateToMorse(string.toLowerCase);
+    let result = translateToMorse(string);
     //assert
-    expect(result).toBe("keep");
+    expect(result).toBe("-.-...--.");
   });
 });
 
