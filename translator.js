@@ -9,5 +9,5 @@ export const translateToMorse = (string) => {
     .map((string) => {
       return morseCode[string];
     })
-    .join("");
+    .join(" ");
 };
