@@ -8,7 +8,18 @@ h1 {
   margin-bottom: 15px;
 }
 
+h3 {
+  text-align: center;
+}
+
 .inputBox {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.engBox {
   display: block;
   padding: 10px;
   margin: auto;
@@ -17,7 +28,7 @@ h1 {
 
 .container__display {
   margin: 10px 60px;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
   font-size: large;
   background-color: #ff7f50;

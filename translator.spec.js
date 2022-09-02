@@ -1,5 +1,5 @@
 import { translateToMorse } from "./translator.js";
-
+import { translateToEnglish } from "./translator.js";
 //Testing the translator to Morse Code
 describe("Testing translateToMorse to take in letters", () => {
   it("a will translate to .-", () => {
@@ -21,7 +21,7 @@ describe("Testing that the strings take any case.", () => {
     string = "Keep";
     let result = translateToMorse(string);
     //assert
-    expect(result).toBe("-.-...--.");
+    expect(result).toBe("-.- . . .--.");
   });
 });
 
@@ -63,11 +63,11 @@ describe("testing that translateToMorse accepts symbols", () => {
 
 //Testing Translate Morse Code to English
 describe("testing translateToEnglish to take in Morse code", () => {
-  it("type *- and it will translate to a", () => {
+  it("type .- and it will translate to a", () => {
     //arrange
     let code;
     //act
-    code = "*-";
+    code = ".-";
     let result = translateToEnglish(code);
     //assert
     expect(result).toBe("a");
@@ -78,37 +78,37 @@ describe("testing that you can translate ..--.. back into ?", () => {
   it("type ..--.. and ? being the output", () => {
     //arrange
     let code;
-    //act 
+    //act
     code = "..--..";
     let result = translateToEnglish(code);
     //assert
-    expect(result).toBe("?")
-  })
-})
+    expect(result).toBe("?");
+  });
+});
 
 describe("Testing that you can translate .---- back into 1", () => {
   it("type .---- and 1 being the output", () => {
     //arrange
     let code;
     //act
-    code = ".----"
+    code = ".----";
     let result = translateToEnglish(code);
     //assert
     expect(result).toBe("1");
-  })
-})
+  });
+});
 
 describe("Testing that you can translate / back into a space", () => {
   it("type / and a space will come between strings", () => {
     //arrange
     let code;
     //act
-     code = " / ";
-     let result = translateToEnglish(code);
+    code = " / ";
+    let result = translateToEnglish(code);
     //assert
     expect(result).toBe(" ");
-  })
-})
+  });
+});
 
 describe("testing that if something isn't accepted there should be a response", () => {
   it("type # and an error will come back saying it isnt accepted", () => {
