@@ -1,5 +1,6 @@
 import { translateToMorse } from "./translator.js";
 
+
 describe("Testing translateToMorse to take in letters", () => {
   it("a will translate to .-", () => {
     //arrange
@@ -84,17 +85,29 @@ describe("testing that a string will print on display", () => {
   });
 });
 
+describe("testing that what is types is being logged", () => {
+  it("type Hello World and it will log Hello World", () => {
+    //arrange
+    let input;
+    //act
+    input = "Hello World";
+    output = console.log(input);
+    //accert
+    expect(output).toBe("Hello World");
+  });
+});
+
 describe("testing that if something isn't accepted there should be a response", () => {
   it("type # and an error will come back saying it isnt accepted", () => {
     //arrange
     let input;
     //act
-    input = "#"
+    input = "#";
     let output = translateToMorse(input);
     //accert
-    expect(output).toBe("Error This is not accepted.")
-  })
-})
+    expect(output).toBe("Error This is not accepted.");
+  });
+});
 //test each thing it should do.
 
 //What should translateToMore function actually be able to do?
