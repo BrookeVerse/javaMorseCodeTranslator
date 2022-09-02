@@ -1,11 +1,14 @@
 import { morseCode } from "./data/morseCode.js";
 //grabbing the input box
-//const input = document.querySelector(".inputBox");
+const input = document.querySelector(".inputBox");
 //
-//input.addEventListener("input", translateToMorse);
-
+input.addEventListener("input", () => {
+  let inputValue = input.value;
+  console.log(inputValue);
+});
+//Need the input value to be what goes through the translator
 export const translateToMorse = (string) => {
-    return string
+  return string
     .toLowerCase()
     .split("")
     .map((string) => {
