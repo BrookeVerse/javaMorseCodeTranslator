@@ -3,9 +3,23 @@
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.inputBox {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
 .container__display {
-  margin: 20px 60px;
+  margin: 10px 60px;
   padding: 30px;
-  background-color: aqua;
-  color: blueviolet;
+  border-radius: 10px;
+  font-size: large;
+  background-color: #ff7f50;
+  color: #d9fae0;
 }
