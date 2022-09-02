@@ -1,6 +1,5 @@
 import { translateToMorse } from "./translator.js";
 
-
 describe("Testing translateToMorse to take in letters", () => {
   it("a will translate to .-", () => {
     //arrange
@@ -76,27 +75,14 @@ describe("testing translateToEnglish to take in Morse code", () => {
 describe("testing that a string will print on display", () => {
   it("type keep away and it will translate to -.- . . .--. / .- .-- .- -.--", () => {
     //arrange
-    let input;
+    let string;
     //act
-    input = "keep away";
-    let output = translateToMorse(input);
+    string = "keep away";
+    let result = translateToMorse(string);
     //assert
-    expect(output).toBe("-.- . . .--. / .- .-- .- -.--");
+    expect(result).toBe("-.-...--. / .-.--.--.--");
   });
 });
-
-describe("testing that what is types is being logged", () => {
-  it("type Hello World and it will log Hello World", () => {
-    //arrange
-    let input;
-    //act
-    input = "Hello World";
-    output = console.log(input);
-    //accert
-    expect(output).toBe("Hello World");
-  });
-});
-
 describe("testing that if something isn't accepted there should be a response", () => {
   it("type # and an error will come back saying it isnt accepted", () => {
     //arrange
