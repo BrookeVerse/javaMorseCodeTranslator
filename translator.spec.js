@@ -110,17 +110,6 @@ describe("Testing that you can translate / back into a space", () => {
   });
 });
 
-describe("testing that if something isn't accepted there should be a response", () => {
-  it("type # and an error will come back saying it isnt accepted", () => {
-    //arrange
-    let input;
-    //act
-    input = "#";
-    let output = translateToMorse(input);
-    //accert
-    expect(output).toBe("Error This is not accepted.");
-  });
-});
 //test each thing it should do.
 
 //What should translateToMore function actually be able to do?

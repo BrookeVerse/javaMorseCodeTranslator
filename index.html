@@ -10,13 +10,30 @@
     <header>
       <h1>Translating to and from morse code</h1>
     </header>
-    <h3>Translate to Morse code</h3>
-    <input type="text" placeholder="Translate Phase" class="inputBox" />
-    <h3>Translate to English</h3>
-    <input type="text" placeholder="Translate Phase" class="engBox" />
-    <div class="container">
-      <div class="container__display"></div>
-    </div>
+    <main>
+      <div class="container">
+        <div>
+          <h3>Translate to Morse code</h3>
+          <input type="text" placeholder="Translate Phase" class="container__morseInput" />
+        </div>
+        <div>
+          <h3>Decoding Morse Code</h3>
+          <input type="text" placeholder="Translate Phase" class="container__engInput" />
+        </div>
+      </div>
+      <div class="displayContainer">
+        <div class="displayContainer__display"></div>
+      </div>
+      <div class="messageSender">
+        <div class="messageSender__container">
+          <h3>Secret Message</h3>
+          <div>
+            <p class="messageSender__message"></p>
+            <button class="messageSender__button">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="./main.js" type="module"></script>
   </body>
 </html>
