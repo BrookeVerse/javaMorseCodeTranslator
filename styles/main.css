@@ -43,6 +43,7 @@ h3 {
   border-radius: 10px;
   font-size: large;
   font-weight: bolder;
+  text-align: center;
   background-color: #e0bbe4;
   color: #d9fae0;
   box-shadow: 5px 5px 15px 10px white;
@@ -58,10 +59,15 @@ h3 {
 }
 .messageSender__message {
   width: 50vw;
-  height: 20vh;
+  height: 10vh;
+  margin: auto;
+  padding: 40px;
   border-radius: 15px;
+  font-size: large;
+  font-weight: bolder;
   background-color: #e0bbe4;
   color: #d9fae0;
+  box-shadow: 5px 5px 15px 10px white;
 }
 .messageSender__button {
   margin-top: 10px;

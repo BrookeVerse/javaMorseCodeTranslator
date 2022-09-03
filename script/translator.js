@@ -1,5 +1,5 @@
-import { morseCode } from "./data/morseCode.js";
-import { morsetoEng } from "./data/morseToEng.js";
+import { morseCode } from "../data/morseCode.js";
+import { morsetoEng } from "../data/morseToEng.js";
 
 //This function will solely use the string entered and use each letter as the key
 //and then return the values for those keys.
