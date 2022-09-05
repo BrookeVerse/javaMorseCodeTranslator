@@ -22,7 +22,7 @@ const displayTranslation = () => {
   message.innerHTML = userInput();
 };
 
-/*Function that is taking the value entered in the inputs and uses the 
+/*Function that is taking the value entered in the inputs and uses that 
   translation functions to return the translation and so it can be displayed*/
 export const userInput = () => {
   let morseValue = morseInput.value;
@@ -30,7 +30,6 @@ export const userInput = () => {
   if (morseValue === "") {
     return translateToEnglish(engValue);
   } else if (typeof engValue == "string") {
-    console.log("Hello");
     return translateToMorse(morseValue);
   }
 };

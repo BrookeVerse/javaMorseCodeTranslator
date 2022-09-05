@@ -1,4 +1,7 @@
 <h1 align="center">Morse Code Translator</h1>
+<p align="center">
+<img width="400" src="./assets/translation.JPG" alt="webpage image">
+</p>
 <br>
 <br>
 <h3 align="center">What is this project?</h3>
@@ -19,4 +22,4 @@ Have the button send a message</p>
 <h3 align="center">Credit</h3>
 <br>
 <br>
-<p>Credit in part goes to the coaches at _nology for thier training to help create this project.</p>
+<p align="center">Credit in part goes to the coaches at _nology for thier training to help create this project.</p>
